@@ -20,3 +20,8 @@ console.log("Removing file", path);
 runjs.removeFile(path);
 
 console.log("File removed");
+
+const content = await runjs.fetch(
+  "https://deno.land/std@0.177.0/examples/welcome.ts",
+);
+console.log("Content from fetch", content);
